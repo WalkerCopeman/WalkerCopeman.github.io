@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="TabPFN and factor neutral equity returns: a research proposal by Michael Walker Copeman">
-  <title>TabPFN and factor neutral equity returns — Michael Walker Copeman</title>
+  <title>TabPFN and Factor Neutral Equity Returns: A Research Proposal — Michael Walker Copeman</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500&display=swap" rel="stylesheet">
@@ -14,31 +14,31 @@
   <div class="article-wrap">
     <a class="back-link" href="../index.html">← Home</a>
     <article class="article">
-      <h1>TabPFN and factor neutral equity returns: a research proposal</h1>
+      <h1>TabPFN and Factor Neutral Equity Returns: A Research Proposal</h1>
 
       <p class="lede">What is the current state-of-the-art financial machine learning model, and can it be used to create implementable and effective portfolios by predicting stock returns neutralized against traditional factor models?</p>
 
-      <p>Financial machine learning and traditional econometrics represent two competing cultures in quantitative finance, as identified by Kelly and Xiu <sup>[1]</sup>. Where econometrics prioritises interpretability and parsimony, machine learning trades model transparency for predictive accuracy — scaling to billions of parameters to achieve superior out-of-sample performance. This trade-off has driven machine learning adoption broadly across finance, with applications spanning macroeconomic policy, credit risk, and cryptocurrency markets <sup>[2]</sup>.</p>
+      <p>Financial machine learning and traditional econometrics represent two competing cultures in quantitative finance, as identified by Kelly and Xiu <a class="citation" href="#ref-1"><sup>[1]</sup></a>. Where econometrics prioritises interpretability and parsimony, machine learning trades model transparency for predictive accuracy — scaling to billions of parameters to achieve superior out-of-sample performance. This trade-off has driven machine learning adoption broadly across finance, with applications spanning macroeconomic policy, credit risk, and cryptocurrency markets <a class="citation" href="#ref-2"><sup>[2]</sup></a>.</p>
 
-      <p>Within the field of machine learning there is persistent effort to evaluate and compare the best performing methods, with websites such as TabArena providing live, maintained benchmarks for tabular machine learning models such as those implemented on financial datasets <sup>[3]</sup>.</p>
+      <p>Within the field of machine learning there is persistent effort to evaluate and compare the best performing methods, with websites such as TabArena providing live, maintained benchmarks for tabular machine learning models such as those implemented on financial datasets <a class="citation" href="#ref-3"><sup>[3]</sup></a>.</p>
 
       <h2>Tree-Based Methods vs. Neural Networks</h2>
 
-      <p>A large amount of research has been directed towards applying deep learning techniques to tabular data. Despite their popular appeal, neural networks have not yet been established as the state of the art when applied to this subset of machine learning. Gradient boosted decision trees such as LightGBM and XGBoost are their greatest competitors. Debate exists within academia as to whether neural networks or tree-based methods are superior when it comes to modelling small to medium sized datasets such as those present in financial markets <sup>[4]</sup>. Grinsztajn et al. highlight the differences in the fundamental characteristics of both architectures, claiming that tree-based methods are indeed both more accurate and have lower computational requirements.</p>
+      <p>A large amount of research has been directed towards applying deep learning techniques to tabular data. Despite their popular appeal, neural networks have not yet been established as the state of the art when applied to this subset of machine learning. Gradient boosted decision trees such as LightGBM and XGBoost are their greatest competitors. Debate exists within academia as to whether neural networks or tree-based methods are superior when it comes to modelling small to medium sized datasets such as those present in financial markets <a class="citation" href="#ref-4"><sup>[4]</sup></a>. Grinsztajn et al. highlight the differences in the fundamental characteristics of both architectures, claiming that tree-based methods are indeed both more accurate and have lower computational requirements.</p>
 
       <h2>Tabular Foundation Models &amp; the Transformer</h2>
 
-      <p>More recently, researchers are trying to take advantage of a specific mechanism that redefined modern neural network architectures known as the Transformer. By extending the principle of Attention defined in the landmark paper <em>Attention is All You Need</em> <sup>[5]</sup>, as well as shifting the layout of the problem from predicting samples to predicting entire datasets, tabular prior data fitted networks intend to extend the popular capabilities of deep learning into a widely applicable tabular foundation model <sup>[6]</sup>.</p>
+      <p>More recently, researchers are trying to take advantage of a specific mechanism that redefined modern neural network architectures known as the Transformer. By extending the principle of Attention defined in the landmark paper <em>Attention is All You Need</em> <a class="citation" href="#ref-5"><sup>[5]</sup></a>, as well as shifting the layout of the problem from predicting samples to predicting entire datasets, tabular prior data fitted networks intend to extend the popular capabilities of deep learning into a widely applicable tabular foundation model <a class="citation" href="#ref-6"><sup>[6]</sup></a>.</p>
 
       <h2>TabPFN</h2>
 
-      <p>Their efforts seem to be finding success. TabPFN, a popular implementation of a tabular prior data fitted network, has achieved recognition for its success across diverse datasets and its outperformance of traditional deep learning as well as gradient boosted decision trees. Since its initial release in 2023, the input capacity of TabPFN has scaled from datasets containing only ten thousand samples to beyond one million, and the model has found applications across a wide variety of scientific fields such as health care and life sciences as well as energy and utilities <sup>[7]</sup>.</p>
+      <p>Their efforts seem to be finding success. TabPFN, a popular implementation of a tabular prior data fitted network, has achieved recognition for its success across diverse datasets and its outperformance of traditional deep learning as well as gradient boosted decision trees. Since its initial release in 2023, the input capacity of TabPFN has scaled from datasets containing only ten thousand samples to beyond one million, and the model has found applications across a wide variety of scientific fields such as health care and life sciences as well as energy and utilities <a class="citation" href="#ref-7"><sup>[7]</sup></a>.</p>
 
-      <p>Prior Labs, the developers of TabPFN, released an expansive list of use cases where the model has been successfully applied in the TabPFN-3 Technical Report <sup>[7]</sup>. Considering its impact on the field, the effectiveness of its predictions, and its competitive computational advantages, TabPFN has the potential to be established as the new state-of-the-art within the machine learning subdomain of tabular modelling.</p>
+      <p>Prior Labs, the developers of TabPFN, released an expansive list of use cases where the model has been successfully applied in the TabPFN-3 Technical Report <a class="citation" href="#ref-7"><sup>[7]</sup></a>. Considering its impact on the field, the effectiveness of its predictions, and its competitive computational advantages, TabPFN has the potential to be established as the new state-of-the-art within the machine learning subdomain of tabular modelling.</p>
 
       <h2>Application to Financial Markets</h2>
 
-      <p>Unanswered questions remain. Of the two hundred and twelve papers and applications listed by Prior Labs in their report, only seven fall under the fields of Financial Services, Banking, and Insurance. This signals a general lack of academic input within these areas and an opportunity for impactful research. Only one of those seven publications was an academic paper related to the prediction of stock returns <sup>[8]</sup>.</p>
+      <p>Unanswered questions remain. Of the two hundred and twelve papers and applications listed by Prior Labs in their report, only seven fall under the fields of Financial Services, Banking, and Insurance. This signals a general lack of academic input within these areas and an opportunity for impactful research. Only one of those seven publications was an academic paper related to the prediction of stock returns <a class="citation" href="#ref-8"><sup>[8]</sup></a>.</p>
 
       <p>Wang and Lera used prior fitted networks to forecast Chinese and American stock returns, comparing the performance of PFNs against traditional neural networks and gradient boosted decision trees. The focus of the paper was directed towards dealing with shifting regimes, a challenging characteristic of financial markets that causes the relationships between predictive features and target variables to change over time. They concluded that prior fitted networks produced results superior to neural networks and tree-based benchmarks — an important result that supports the hypothesis that prior fitted networks have the potential to become the new state-of-the-art in tabular machine learning applied to financial markets.</p>
 
@@ -46,7 +46,7 @@
 
       <h2>Factor Models &amp; Factor-Neutral Returns</h2>
 
-      <p>Regarding the practicality of this research, there is an important consideration that remains unexplored: that of factor models and factor-neutral returns. Financial machine learning models rely on groups of features called factors that describe fundamental characteristics of companies such as earnings trends, stock price volatility, and quality <sup>[9]</sup>. The association between expected returns and factors has been documented in academia. Models that rely purely on factors are prone to significant practical weaknesses, such as high portfolio turnover rates that lead to trading costs so severe that the portfolio is not economically feasible.</p>
+      <p>Regarding the practicality of this research, there is an important consideration that remains unexplored: that of factor models and factor-neutral returns. Financial machine learning models rely on groups of features called factors that describe fundamental characteristics of companies such as earnings trends, stock price volatility, and quality <a class="citation" href="#ref-9"><sup>[9]</sup></a>. The association between expected returns and factors has been documented in academia. Models that rely purely on factors are prone to significant practical weaknesses, such as high portfolio turnover rates that lead to trading costs so severe that the portfolio is not economically feasible.</p>
 
       <p>Methods exist that are capable of neutralising exposure to these factors. This was not accounted for by Wang and Lera. Further research needs to explore the potential of prior fitted networks to model stock returns that have been neutralised to common factors, and then compared with the ability of neural networks and gradient boosted trees to do so as well.</p>
 
@@ -59,15 +59,15 @@
       <h2>References</h2>
 
       <div class="references">
-        <p><strong>[1]</strong> Kelly, B. T., &amp; Xiu, D. (2023). Financial machine learning. <em>SSRN.</em> <a href="https://doi.org/10.2139/ssrn.4501707">https://doi.org/10.2139/ssrn.4501707</a></p>
-        <p><strong>[2]</strong> El Alami, S. E. A., et al. (2025). Machine learning and deep learning in computational finance: A systematic review. <em>arXiv.</em> <a href="https://arxiv.org/abs/2511.21588">https://arxiv.org/abs/2511.21588</a></p>
-        <p><strong>[3]</strong> Erickson, N., et al. (2025). TabArena: A living benchmark for machine learning on tabular data. <em>arXiv.</em> <a href="https://arxiv.org/abs/2506.16791">https://arxiv.org/abs/2506.16791</a></p>
-        <p><strong>[4]</strong> Grinsztajn, L., Oyallon, E., &amp; Varoquaux, G. (2022). Why do tree-based models still outperform deep learning on tabular data? <em>arXiv.</em> <a href="https://arxiv.org/abs/2207.08815">https://arxiv.org/abs/2207.08815</a></p>
-        <p><strong>[5]</strong> Vaswani, A., et al. (2017). Attention is all you need. <em>arXiv.</em> <a href="https://arxiv.org/abs/1706.03762">https://arxiv.org/abs/1706.03762</a></p>
-        <p><strong>[6]</strong> Hollmann, N., et al. (2025). Accurate predictions on small data with a tabular foundation model. <em>Nature, 637</em>, 319–326. <a href="https://doi.org/10.1038/s41586-024-08328-6">https://doi.org/10.1038/s41586-024-08328-6</a></p>
-        <p><strong>[7]</strong> Prior Labs. (2026). TabPFN-3: Technical report. <em>arXiv.</em> <a href="https://arxiv.org/abs/2605.13986">https://arxiv.org/abs/2605.13986</a></p>
-        <p><strong>[8]</strong> Wang, Y., &amp; Lera, S. C. (2024). Meta-learning for return prediction in shifting market regimes. <em>SSRN.</em> <a href="https://doi.org/10.2139/ssrn.5022829">https://doi.org/10.2139/ssrn.5022829</a></p>
-        <p><strong>[9]</strong> Wang, R. (2025). Factor investing and factor-neutral investing. <a href="https://www.rongwang.net/files/FactorNeutralInvesting_Wang2025.pdf">https://www.rongwang.net/files/FactorNeutralInvesting_Wang2025.pdf</a></p>
+        <p id="ref-1"><strong>[1]</strong> Kelly, B. T., &amp; Xiu, D. (2023). <a href="https://doi.org/10.2139/ssrn.4501707" target="_blank" rel="noopener noreferrer">Financial machine learning</a>. <em>SSRN.</em></p>
+        <p id="ref-2"><strong>[2]</strong> El Alami, S. E. A., et al. (2025). <a href="https://arxiv.org/abs/2511.21588" target="_blank" rel="noopener noreferrer">Machine learning and deep learning in computational finance: A systematic review</a>. <em>arXiv.</em></p>
+        <p id="ref-3"><strong>[3]</strong> Erickson, N., et al. (2025). <a href="https://arxiv.org/abs/2506.16791" target="_blank" rel="noopener noreferrer">TabArena: A living benchmark for machine learning on tabular data</a>. <em>arXiv.</em></p>
+        <p id="ref-4"><strong>[4]</strong> Grinsztajn, L., Oyallon, E., &amp; Varoquaux, G. (2022). <a href="https://arxiv.org/abs/2207.08815" target="_blank" rel="noopener noreferrer">Why do tree-based models still outperform deep learning on tabular data?</a> <em>arXiv.</em></p>
+        <p id="ref-5"><strong>[5]</strong> Vaswani, A., et al. (2017). <a href="https://arxiv.org/abs/1706.03762" target="_blank" rel="noopener noreferrer">Attention is all you need</a>. <em>arXiv.</em></p>
+        <p id="ref-6"><strong>[6]</strong> Hollmann, N., et al. (2025). <a href="https://doi.org/10.1038/s41586-024-08328-6" target="_blank" rel="noopener noreferrer">Accurate predictions on small data with a tabular foundation model</a>. <em>Nature, 637</em>, 319–326.</p>
+        <p id="ref-7"><strong>[7]</strong> Prior Labs. (2026). <a href="https://arxiv.org/abs/2605.13986" target="_blank" rel="noopener noreferrer">TabPFN-3: Technical report</a>. <em>arXiv.</em></p>
+        <p id="ref-8"><strong>[8]</strong> Wang, Y., &amp; Lera, S. C. (2024). <a href="https://doi.org/10.2139/ssrn.5022829" target="_blank" rel="noopener noreferrer">Meta-learning for return prediction in shifting market regimes</a>. <em>SSRN.</em></p>
+        <p id="ref-9"><strong>[9]</strong> Wang, R. (2025). <a href="https://www.rongwang.net/files/FactorNeutralInvesting_Wang2025.pdf" target="_blank" rel="noopener noreferrer">Factor investing and factor-neutral investing</a>.</p>
       </div>
     </article>
   </div>
